@@ -2,6 +2,7 @@
 
 ### An ArrayList is a resizable array implementation of the List interface.  
 Its ability to grow and shrink dynamically is one of its key features.
+`ArrayList is a resizable-array implementation of the List interface. It provides a dynamic way to store a collection of elements, unlike traditional arrays which have a fixed size.`
 
 ---
 
