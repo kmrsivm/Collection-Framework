@@ -13,15 +13,15 @@
 
 ```
 	private static class Node<E> {
-    E item;       // Data of the node
-    Node<E> next; // Reference to the next node
-    Node<E> prev; // Reference to the previous node
+    		E item;       // Data of the node
+   		 Node<E> next; // Reference to the next node
+   		 Node<E> prev; // Reference to the previous node
 
-    Node(Node<E> prev, E element, Node<E> next) {
-        this.item = element;
-        this.next = next;
-        this.prev = prev;
-    }
+    		Node(Node<E> prev, E element, Node<E> next) {
+			this.item = element;
+        		this.next = next;
+        		this.prev = prev;
+    		}
 	}
 ```
 
