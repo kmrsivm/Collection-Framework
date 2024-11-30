@@ -6,6 +6,8 @@ Its ability to grow and shrink dynamically is one of its key features.
 
 ---
 
+ArrayList: Non-Synchronized
+
 ## Key Features
 - The elements from the old array are copied into the new array.
 - The new array replaces the old one internally.
