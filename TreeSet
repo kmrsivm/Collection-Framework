@@ -1,58 +1,31 @@
-# TreeSet in Java 🌳
+## TreeSet in Java
 
-A **TreeSet** in Java is a sorted collection of unique elements. It is implemented using a **self-balancing binary search tree**, typically a **Red-Black tree**. This underlying data structure ensures efficient insertion, deletion, and retrieval operations, even for large datasets.
+### A TreeSet in Java is a sorted collection of unique elements. It's implemented using a self-balancing binary search tree, typically a Red-Black tree. This underlying data structure ensures efficient insertion, deletion, and retrieval operations, even for large datasets.   
 
----
+Key Characteristics:
 
-## 🚩 Key Characteristics
-- **Sorted**: Elements are stored in ascending order based on their natural ordering or a custom comparator.
-- **Unique**: Duplicate elements are not allowed.
-- **Efficient**: Operations like insertion, deletion, and retrieval have a time complexity of **O(log n)**.
+Sorted: Elements are stored in ascending order based on their natural ordering or a custom comparator.   
+Unique: Duplicate elements are not allowed.
+Efficient: Operations like insertion, deletion, and retrieval have a time complexity of O(log n).
+Common Operations:
 
----
+add(element): Adds an element to the TreeSet.
+remove(element): Removes an element from the TreeSet.
+contains(element): Checks if an element exists in the TreeSet.
+size(): Returns the number of elements in the TreeSet.
+isEmpty(): Checks if the TreeSet is empty.
+clear(): Removes all elements from the TreeSet.
+first(): Returns the first (smallest) element.   
+last(): Returns the last (largest) element.   
+headSet(element): Returns a subset of elements less than the specified element.
+tailSet(element): Returns a subset of elements greater than or equal to the specified element.
+subSet(fromElement, toElement): Returns a subset of elements within a specific range.
 
-## 🔧 Common Operations
-| **Method**               | **Description**                                                                 |
-|---------------------------|---------------------------------------------------------------------------------|
-| `add(element)`            | Adds an element to the TreeSet.                                                |
-| `remove(element)`         | Removes an element from the TreeSet.                                           |
-| `contains(element)`       | Checks if an element exists in the TreeSet.                                    |
-| `size()`                  | Returns the number of elements in the TreeSet.                                 |
-| `isEmpty()`               | Checks if the TreeSet is empty.                                                |
-| `clear()`                 | Removes all elements from the TreeSet.                                         |
-| `first()`                 | Returns the first (smallest) element.                                          |
-| `last()`                  | Returns the last (largest) element.                                            |
-| `headSet(element)`        | Returns a subset of elements less than the specified element.                  |
-| `tailSet(element)`        | Returns a subset of elements greater than or equal to the specified element.    |
-| `subSet(fromElement, toElement)` | Returns a subset of elements within a specific range.                    |
+Use Cases:
 
----
+Storing and retrieving elements in sorted order.
+Implementing priority queues.
+Maintaining unique elements in a sorted collection.
+In Summary:
 
-## 📚 Use Cases
-1. **Storing and retrieving elements in sorted order**:
-   - Example: Maintaining a list of students ranked by scores.
-2. **Implementing priority queues**:
-   - Example: Scheduling tasks based on deadlines.
-3. **Maintaining unique elements in a sorted collection**:
-   - Example: Storing unique timestamps in ascending order.
-
----
-
-## ✨ Example Code
-```java
-import java.util.*;
-
-public class TreeSetExample {
-    public static void main(String[] args) {
-        TreeSet<Integer> treeSet = new TreeSet<>();
-
-        treeSet.add(5);
-        treeSet.add(2);
-        treeSet.add(8);
-        treeSet.add(1);
-
-        System.out.println("TreeSet: " + treeSet); // Output: [1, 2, 5, 8]
-        System.out.println("First Element: " + treeSet.first()); // Output: 1
-        System.out.println("Last Element: " + treeSet.last());   // Output: 8
-    }
-}
+TreeSet is a valuable tool for working with sorted and unique elements in Java. Its efficient implementation and versatile operations make it a powerful choice for various data structures and algorithms. 
