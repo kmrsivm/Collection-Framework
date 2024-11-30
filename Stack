@@ -1,0 +1,21 @@
+# Stack
+
+### The stack is a linear data structure that is used to store the collection of objects. It is based on Last-In-First-Out (LIFO). 
+
+1.	Data Structure:
+	  •	Stack is a Last-In-First-Out (LIFO) data structure.
+	  •	It inherits the properties of Vector, meaning it uses a dynamic array (Object[] elementData) for internal storage.
+2.	Key Operations:
+	  •	Push: Adds an element to the top of the stack.
+	  •	Pop: Removes and returns the top element.
+	  •	Peek: Retrieves the top element without removing it.
+	  •	Search: Returns the 1-based position of an element in the stack.
+	  •	Empty: Checks if the stack is empty.
+3.	Capacity Management:
+	  •	Since Stack extends Vector, it follows the same dynamic resizing behavior:
+	  •	Starts with an initial capacity (default: 10).
+  	•	Doubles its capacity when full (100% growth rate).
+4.	Synchronization:
+	  •	Like Vector, all Stack methods are synchronized, making it thread-safe but slower in single-threaded environments.
+5.	Internal Array Access:
+	  •	Elements are accessed using an index (size() - 1 for the top element).
