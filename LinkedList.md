@@ -2,6 +2,7 @@
 
 - Linked list is a dynamic data structure that stores elements in a linear fashion, where each element (node) contains a value and a reference to the next node in the list. Unlike arrays, linked lists don't require contiguous memory allocation, making them efficient for insertions and deletions.
 
+LinkedList: Non-Synchronized
 
 ## Key Features
 
